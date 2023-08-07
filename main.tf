@@ -31,6 +31,6 @@ module "lambda_api" {
   api_url                     = local.apiUrl
   ecr_repo                    = var.ecr_repo
   image_tag                   = var.image_tag
-  lambda_function_definitions = var.lambda_function_definitions
+  lambda_endpoint_definitions = var.lambda_endpoint_definitions
   function_policies           = var.lambda_policies
 }

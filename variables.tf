@@ -24,7 +24,7 @@ variable "image_tag" {
   description = "The image tag for the Docker image (the timestamp)."
 }
 
-variable "lambda_function_definitions" {
+variable "lambda_endpoint_definitions" {
   type = list(object({
     path_part       = string
     allowed_headers = optional(string)
