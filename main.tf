@@ -32,5 +32,6 @@ module "lambda_api" {
   ecr_repo                    = var.ecr_repo
   image_tag                   = var.image_tag
   lambda_endpoint_definitions = var.lambda_endpoint_definitions
+  lambda_environment_variables = var.lambda_environment_variables
   function_policies           = var.lambda_policies
 }
