@@ -24,13 +24,14 @@ module "s3_site" {
 module "lambda_api" {
   source = "github.com/byuawsfhtl/terraform-lambda-api?ref=prd"
 
-  project_name                = var.project_name
-  app_name                    = var.app_name
-  domain                      = local.domain
-  url                         = local.url
-  api_url                     = local.apiUrl
-  ecr_repo                    = var.ecr_repo
-  image_tag                   = var.image_tag
-  lambda_endpoint_definitions = var.lambda_endpoint_definitions
-  function_policies           = var.lambda_policies
+  project_name                 = var.project_name
+  app_name                     = var.app_name
+  domain                       = local.domain
+  url                          = local.url
+  api_url                      = local.apiUrl
+  ecr_repo                     = var.ecr_repo
+  image_tag                    = var.image_tag
+  lambda_endpoint_definitions  = var.lambda_endpoint_definitions
+  lambda_environment_variables = var.lambda_environment_variables
+  function_policies            = var.lambda_policies
 }
