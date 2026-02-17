@@ -40,6 +40,7 @@ variable "lambda_endpoint_definitions" {
       http_method = string
       command     = list(string)
       timeout     = optional(number)
+      memory_size = optional(number)
     }))
   }))
   description = "The definitions for each lambda function."
